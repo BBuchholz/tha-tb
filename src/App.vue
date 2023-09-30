@@ -1,5 +1,15 @@
 <script setup>
 import { RouterLink, RouterView } from 'vue-router'
+
+// TODO: move this to a button? so its only when requested?
+// REMOVE ALL SERVICE WORKERS
+navigator.serviceWorker.getRegistrations().then(
+    function(registrations) {
+        for(let registration of registrations) {
+            registration.unregister();
+        }
+});
+
 </script>
 
 <template>
