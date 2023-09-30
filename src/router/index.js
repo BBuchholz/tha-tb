@@ -1,5 +1,9 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
+// import CardsView from '../views/CardsView.vue'
+// import CardView from '../views/CardView.vue'
+// import ZhonesView from '../views/ZhonesView.vue'
+// import SitesView from '../views/SitesView.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -16,7 +20,27 @@ const router = createRouter({
       // this generates a separate chunk (About.[hash].js) for this route
       // which is lazy-loaded when the route is visited.
       component: () => import('../views/AboutView.vue')
-    }
+    },
+    // {
+    //   path: '/cards',
+    //   name: 'cards',
+    //   component: CardsView
+    // },
+    // {
+    //   path: '/card/:id', 
+    //   name: 'card', 
+    //   component: CardView
+    // },
+    // {
+    //   path: '/zhones',
+    //   name: 'zhones',
+    //   component: ZhonesView
+    // },
+    // {
+    //   path: '/sites',
+    //   name: 'sites',
+    //   component: SitesView
+    // }
   ]
 })
 
