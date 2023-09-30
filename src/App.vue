@@ -20,7 +20,17 @@ import { RouterLink, RouterView } from 'vue-router'
 
 <style>
   .navbar {
-    background-color: lightgreen;
+    background-color: #191919;
     padding: 1.2rem;
+  }
+
+  body {
+    background-color: #2d2b26;
+    color: #decfc7;
+    margin: 40px;
+  }
+
+  a {
+    color: #21ecbb;
   }
 </style>

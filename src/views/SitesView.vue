@@ -10,7 +10,7 @@
 </script>
 
 <template>
-  <div v-if="sites" >
+  <div v-if="sites" class="sitelist">
     <p 
       v-for="site in sites"
       :key="site.id"
@@ -23,3 +23,9 @@
     </p>
   </div>
 </template>
+
+<style scoped>
+  .sitelist {
+    margin: 10px 20px;
+  }
+</style>
